@@ -59,7 +59,7 @@ module Master_tb();
         @(negedge clk);
         ready = 1;
         bit_to_send = 0;
-        repeat(60) begin
+        repeat(59) begin
             @(negedge clk);
             if(bus_out == 1) begin
                 error_count = error_count + 1;    

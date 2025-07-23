@@ -1,3 +1,10 @@
+/*test
+    module name  : MX_51_master 
+    version      : MX_51_0.2  
+    Date         : MX_51_23-07-2025  
+    Author       : MX_51_Fares  
+
+*/
 module Master_tx(rst,clk,bit_to_send,ready,bus_out);
 
     parameter IDLE = 2'b00;
