@@ -1,0 +1,36 @@
+# //  Questa Sim-64
+# //  Version 2021.1 win64 Jan 19 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 11:10:46 on Jul 23,2025
+# vlog -reportprogress 300 -f src_files.list 
+# -- Compiling module Bus
+# -- Compiling module Master_tx
+# -- Compiling module internal_counter
+# -- Compiling module Master_tb
+# 
+# Top level modules:
+# 	Master_tb
+# End time: 11:10:46 on Jul 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" Master_tb 
+# Start time: 11:10:47 on Jul 23,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.Master_tb(fast)
+# Loading work.Master_tx(fast)
+# Loading work.internal_counter(fast)
+# Loading work.Bus(fast)
