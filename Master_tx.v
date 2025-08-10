@@ -7,16 +7,17 @@
 */
 module Master_tx(rst,clk,bit_to_send,ready,bus_out);
 
-    parameter IDLE = 2'b00;
-    parameter SEND_1 = 2'b01;
-    parameter SEND_0 = 2'b11;
+    parameter IDLE        = 2'b00;
+    parameter SEND_1      = 2'b01;
+    parameter SEND_0      = 2'b10;
+    parameter REALESE_BUS = 2'b11;
 
     input clk,rst,bit_to_send,ready;
     output reg bus_out;
     
     wire load_en;
-    wire [5:0] counter_out;
-    wire [5:0] load_value;
+    wire [6:0] counter_out;
+    wire [6:0] load_value;
 
     reg[1:0] current_state,next_state;
 
@@ -49,20 +50,29 @@ module Master_tx(rst,clk,bit_to_send,ready,bus_out);
             end 
 
             SEND_1: begin
-                if(counter_out !== 'b0) begin
+                if(counter_out > 'd64) begin
                     next_state = SEND_1;
                 end
                 else begin
-                    next_state = IDLE;
+                    next_state = REALESE_BUS;
                 end
             end
 
             SEND_0: begin
-                if(counter_out !== 'b0) begin
+                if(counter_out > 'd10) begin
                     next_state = SEND_0;
                 end
                 else begin
+                    next_state = REALESE_BUS;
+                end
+            end
+
+            REALESE_BUS: begin
+                if(counter_out == 'b0) begin
                     next_state = IDLE;
+                end
+                else if (counter_out > 'b0) begin
+                    next_state = REALESE_BUS;
                 end
             end
             default: next_state = IDLE;
@@ -74,7 +84,7 @@ module Master_tx(rst,clk,bit_to_send,ready,bus_out);
     always @(*) begin
         case (current_state)
            IDLE: begin
-                bus_out = 1;
+                bus_out = 'bz;
            end
 
            SEND_1: begin
@@ -83,22 +93,25 @@ module Master_tx(rst,clk,bit_to_send,ready,bus_out);
 
            SEND_0: begin
                 bus_out = 0;
+           end
+           REALESE_BUS: begin
+                bus_out = 'bz;
            end 
 
-            default: bus_out = 1;
+            default: bus_out = 'bz;
         endcase
     end
 
-    assign load_en = ((current_state != next_state)||next_state == IDLE);
-    assign load_value = ((next_state==SEND_1)?5 : 59);
+    assign load_en = next_state == IDLE;
+    assign load_value = 'd70;
 
 endmodule
 
 
 module internal_counter(rst,clk,load_value,load_en,counter_out);
     input rst, clk,load_en;
-    input [5:0] load_value;
-    output reg [5:0] counter_out;
+    input [6:0] load_value;
+    output reg [6:0] counter_out;
 
     always @(posedge clk or posedge rst) begin
         if (rst) begin

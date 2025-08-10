@@ -43,14 +43,24 @@ module Master_tb();
         ready = 1;
         repeat(6) begin
             @(negedge clk);
-            if(bus_out == 1) begin
+            if(bus_out !== 0 || DUT.bus.bus !== 0 ) begin
                 error_count = error_count + 1;    
-                $fatal("send1 error");
-
+                $fatal("send1-1 error bus = %0d, bus_out =%0d",DUT.bus.bus,bus_out);
             end
-
             else begin
                 correct_count = correct_count + 1;
+            end
+        end
+
+        repeat(64) begin
+            @(negedge clk);
+            if((bus_out === 1'bz) && (DUT.bus.bus === 1'b1)) begin
+                correct_count = correct_count +1;
+            end
+            else begin
+                error_count = error_count + 1;    
+                $error("send1-0 error bus = %0d, bus_out =%0d",DUT.bus.bus,bus_out);
+                $stop;
             end
         end
     //========================================
@@ -59,14 +69,26 @@ module Master_tb();
         @(negedge clk);
         ready = 1;
         bit_to_send = 0;
-        repeat(59) begin
+        repeat(60) begin
             @(negedge clk);
-            if(bus_out == 1) begin
+            if(bus_out !== 0 || DUT.bus.bus !== 0 ) begin
                 error_count = error_count + 1;    
-                $fatal ("send0 error");
+                $fatal("send1-1 error bus = %0d, bus_out =%0d",DUT.bus.bus,bus_out);
             end
             else begin
                 correct_count = correct_count + 1;
+            end
+        end
+
+        repeat(10) begin
+            @(negedge clk);
+            if((bus_out === 1'bz) && (DUT.bus.bus === 1'b1)) begin
+                correct_count = correct_count +1;
+            end
+            else begin
+                error_count = error_count + 1;    
+                $error("send0-1 error bus = %0d, bus_out =%0d",DUT.bus.bus,bus_out);
+                $stop;
             end
         end
         @(negedge clk);

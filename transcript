@@ -16,7 +16,7 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # Errors: 0, Warnings: 1
 # QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
-# Start time: 12:31:22 on Jul 23,2025
+# Start time: 17:42:30 on Aug 10,2025
 # vlog -reportprogress 300 -f src_files.list 
 # -- Compiling module Bus
 # -- Compiling module Master_tx
@@ -25,11 +25,11 @@
 # 
 # Top level modules:
 # 	Master_tb
-# End time: 12:31:23 on Jul 23,2025, Elapsed time: 0:00:01
+# End time: 17:42:30 on Aug 10,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs="+acc" Master_tb 
-# Start time: 12:31:23 on Jul 23,2025
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 17:42:30 on Aug 10,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Note: (vopt-143) Recognized 1 FSM in module "Master_tx(fast)".
 # Loading work.Master_tb(fast)
 # Loading work.Master_tx(fast)
@@ -37,14 +37,719 @@
 # Loading work.Bus(fast)
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Fares Sultan  Hostname: DESKTOP-QKFN6QS  ProcessID: 15524
-#           Attempting to use alternate WLF file "./wlftf7ea2h".
+#           Attempting to use alternate WLF file "./wlft7n2bff".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftf7ea2h
-# Causality operation skipped due to absence of debug database file
-run -continue
-run -continue
+#           Using alternate file: ./wlft7n2bff
+add wave -position insertpoint sim:/Master_tb/DUT/bus/*
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading work.Master_tb(fast)
+# Loading work.Master_tx(fast)
+# Loading work.internal_counter(fast)
+# Loading work.Bus(fast)
+run
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 17:57:30 on Aug 10,2025
+# vlog -reportprogress 300 -f src_files.list 
+# -- Compiling module Bus
+# -- Compiling module Master_tx
+# -- Compiling module internal_counter
+# -- Compiling module Master_tb
+# 
+# Top level modules:
+# 	Master_tb
+# End time: 17:57:30 on Aug 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:57:32 on Aug 10,2025, Elapsed time: 0:15:02
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" Master_tb 
+# Start time: 17:57:32 on Aug 10,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Master_tb(fast)
+# Loading work.Master_tx(fast)
+# Loading work.internal_counter(fast)
+# Loading work.Bus(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Fares Sultan  Hostname: DESKTOP-QKFN6QS  ProcessID: 15524
+#           Attempting to use alternate WLF file "./wlftmts8c9".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftmts8c9
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 18:02:52 on Aug 10,2025
+# vlog -reportprogress 300 -f src_files.list 
+# -- Compiling module Bus
+# -- Compiling module Master_tx
+# -- Compiling module internal_counter
+# -- Compiling module Master_tb
+# 
+# Top level modules:
+# 	Master_tb
+# End time: 18:02:52 on Aug 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:02:54 on Aug 10,2025, Elapsed time: 0:05:22
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" Master_tb 
+# Start time: 18:02:54 on Aug 10,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Master_tb(fast)
+# Loading work.Master_tx(fast)
+# Loading work.internal_counter(fast)
+# Loading work.Bus(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Fares Sultan  Hostname: DESKTOP-QKFN6QS  ProcessID: 15524
+#           Attempting to use alternate WLF file "./wlft5sttg8".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft5sttg8
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 18:06:31 on Aug 10,2025
+# vlog -reportprogress 300 -f src_files.list 
+# -- Compiling module Bus
+# -- Compiling module Master_tx
+# -- Compiling module internal_counter
+# -- Compiling module Master_tb
+# 
+# Top level modules:
+# 	Master_tb
+# End time: 18:06:31 on Aug 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:06:33 on Aug 10,2025, Elapsed time: 0:03:39
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" Master_tb 
+# Start time: 18:06:33 on Aug 10,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Master_tb(fast)
+# Loading work.Master_tx(fast)
+# Loading work.internal_counter(fast)
+# Loading work.Bus(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Fares Sultan  Hostname: DESKTOP-QKFN6QS  ProcessID: 15524
+#           Attempting to use alternate WLF file "./wlft619s9t".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft619s9t
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 18:07:21 on Aug 10,2025
+# vlog -reportprogress 300 -f src_files.list 
+# -- Compiling module Bus
+# -- Compiling module Master_tx
+# -- Compiling module internal_counter
+# -- Compiling module Master_tb
+# 
+# Top level modules:
+# 	Master_tb
+# End time: 18:07:21 on Aug 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:07:23 on Aug 10,2025, Elapsed time: 0:00:50
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" Master_tb 
+# Start time: 18:07:23 on Aug 10,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Master_tb(fast)
+# Loading work.Master_tx(fast)
+# Loading work.internal_counter(fast)
+# Loading work.Bus(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Fares Sultan  Hostname: DESKTOP-QKFN6QS  ProcessID: 15524
+#           Attempting to use alternate WLF file "./wlftzmztv3".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftzmztv3
 run
 # Correct count = 66
 # ** Note: $stop    : master_tb.v(76)
 #    Time: 146 ns  Iteration: 1  Instance: /Master_tb
 # Break in Module Master_tb at master_tb.v line 76
+run
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 18:11:18 on Aug 10,2025
+# vlog -reportprogress 300 -f src_files.list 
+# -- Compiling module Bus
+# -- Compiling module Master_tx
+# -- Compiling module internal_counter
+# -- Compiling module Master_tb
+# 
+# Top level modules:
+# 	Master_tb
+# End time: 18:11:18 on Aug 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:11:21 on Aug 10,2025, Elapsed time: 0:03:58
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" Master_tb 
+# Start time: 18:11:21 on Aug 10,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Master_tb(fast)
+# Loading work.Master_tx(fast)
+# Loading work.internal_counter(fast)
+# Loading work.Bus(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Fares Sultan  Hostname: DESKTOP-QKFN6QS  ProcessID: 15524
+#           Attempting to use alternate WLF file "./wlft55v5cs".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft55v5cs
+# ** Warning: (vsim-PLI-8496) $fatal : Argument number 1 is invalid. Expecting 0, 1, or 2. Using default value of 1
+#    Time: 12 ns  Iteration: 1  Process: /Master_tb/#INITIAL#17 File: master_tb.v Line: 48
+# ** Fatal: send1 error
+#    Time: 12 ns  Scope: Master_tb File: master_tb.v Line: 48
+# ** Note: $finish    : master_tb.v(48)
+#    Time: 12 ns  Iteration: 1  Instance: /Master_tb
+# 1
+# Break in Module Master_tb at master_tb.v line 48
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 18:12:43 on Aug 10,2025
+# vlog -reportprogress 300 -f src_files.list 
+# -- Compiling module Bus
+# -- Compiling module Master_tx
+# -- Compiling module internal_counter
+# -- Compiling module Master_tb
+# 
+# Top level modules:
+# 	Master_tb
+# End time: 18:12:43 on Aug 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:12:47 on Aug 10,2025, Elapsed time: 0:01:26
+# Errors: 1, Warnings: 3
+# vsim -voptargs="+acc" Master_tb 
+# Start time: 18:12:47 on Aug 10,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Master_tb(fast)
+# Loading work.Master_tx(fast)
+# Loading work.internal_counter(fast)
+# Loading work.Bus(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Fares Sultan  Hostname: DESKTOP-QKFN6QS  ProcessID: 15524
+#           Attempting to use alternate WLF file "./wlft75m4ms".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft75m4ms
+# ** Warning: (vsim-PLI-8496) $fatal : Argument number 1 is invalid. Expecting 0, 1, or 2. Using default value of 1
+#    Time: 12 ns  Iteration: 1  Process: /Master_tb/#INITIAL#17 File: master_tb.v Line: 48
+# ** Fatal: send1 error
+#    Time: 12 ns  Scope: Master_tb File: master_tb.v Line: 48
+# ** Note: $finish    : master_tb.v(48)
+#    Time: 12 ns  Iteration: 1  Instance: /Master_tb
+# 1
+# Break in Module Master_tb at master_tb.v line 48
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 18:13:21 on Aug 10,2025
+# vlog -reportprogress 300 -f src_files.list 
+# -- Compiling module Bus
+# -- Compiling module Master_tx
+# -- Compiling module internal_counter
+# -- Compiling module Master_tb
+# 
+# Top level modules:
+# 	Master_tb
+# End time: 18:13:21 on Aug 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:13:24 on Aug 10,2025, Elapsed time: 0:00:37
+# Errors: 1, Warnings: 3
+# vsim -voptargs="+acc" Master_tb 
+# Start time: 18:13:24 on Aug 10,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Master_tb(fast)
+# Loading work.Master_tx(fast)
+# Loading work.internal_counter(fast)
+# Loading work.Bus(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Fares Sultan  Hostname: DESKTOP-QKFN6QS  ProcessID: 15524
+#           Attempting to use alternate WLF file "./wlftae6jmr".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftae6jmr
+# ** Warning: (vsim-PLI-8496) $fatal : Argument number 1 is invalid. Expecting 0, 1, or 2. Using default value of 1
+#    Time: 12 ns  Iteration: 1  Process: /Master_tb/#INITIAL#17 File: master_tb.v Line: 48
+# ** Fatal: send1 error
+#    Time: 12 ns  Scope: Master_tb File: master_tb.v Line: 48
+# ** Note: $finish    : master_tb.v(48)
+#    Time: 12 ns  Iteration: 1  Instance: /Master_tb
+# 1
+# Break in Module Master_tb at master_tb.v line 48
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 18:14:06 on Aug 10,2025
+# vlog -reportprogress 300 -f src_files.list 
+# -- Compiling module Bus
+# -- Compiling module Master_tx
+# -- Compiling module internal_counter
+# -- Compiling module Master_tb
+# 
+# Top level modules:
+# 	Master_tb
+# End time: 18:14:06 on Aug 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:14:10 on Aug 10,2025, Elapsed time: 0:00:46
+# Errors: 1, Warnings: 3
+# vsim -voptargs="+acc" Master_tb 
+# Start time: 18:14:10 on Aug 10,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Master_tb(fast)
+# Loading work.Master_tx(fast)
+# Loading work.internal_counter(fast)
+# Loading work.Bus(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Fares Sultan  Hostname: DESKTOP-QKFN6QS  ProcessID: 15524
+#           Attempting to use alternate WLF file "./wlft775f9j".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft775f9j
+# ** Warning: (vsim-PLI-8496) $fatal : Argument number 1 is invalid. Expecting 0, 1, or 2. Using default value of 1
+#    Time: 12 ns  Iteration: 1  Process: /Master_tb/#INITIAL#17 File: master_tb.v Line: 48
+# ** Fatal: send1 error bus = 0, bus_out =0
+#    Time: 12 ns  Scope: Master_tb File: master_tb.v Line: 48
+# ** Note: $finish    : master_tb.v(48)
+#    Time: 12 ns  Iteration: 1  Instance: /Master_tb
+# 1
+# Break in Module Master_tb at master_tb.v line 48
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 18:15:04 on Aug 10,2025
+# vlog -reportprogress 300 -f src_files.list 
+# -- Compiling module Bus
+# -- Compiling module Master_tx
+# -- Compiling module internal_counter
+# -- Compiling module Master_tb
+# 
+# Top level modules:
+# 	Master_tb
+# End time: 18:15:04 on Aug 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:15:07 on Aug 10,2025, Elapsed time: 0:00:57
+# Errors: 1, Warnings: 3
+# vsim -voptargs="+acc" Master_tb 
+# Start time: 18:15:07 on Aug 10,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Master_tb(fast)
+# Loading work.Master_tx(fast)
+# Loading work.internal_counter(fast)
+# Loading work.Bus(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Fares Sultan  Hostname: DESKTOP-QKFN6QS  ProcessID: 15524
+#           Attempting to use alternate WLF file "./wlft599zrg".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft599zrg
+# ** Warning: (vsim-PLI-8496) $fatal : Argument number 1 is invalid. Expecting 0, 1, or 2. Using default value of 1
+#    Time: 12 ns  Iteration: 1  Process: /Master_tb/#INITIAL#17 File: master_tb.v Line: 48
+# ** Fatal: send1 error bus = 0, bus_out =0
+#    Time: 12 ns  Scope: Master_tb File: master_tb.v Line: 48
+# ** Note: $finish    : master_tb.v(48)
+#    Time: 12 ns  Iteration: 1  Instance: /Master_tb
+# 1
+# Break in Module Master_tb at master_tb.v line 48
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 18:16:43 on Aug 10,2025
+# vlog -reportprogress 300 -f src_files.list 
+# -- Compiling module Bus
+# -- Compiling module Master_tx
+# -- Compiling module internal_counter
+# -- Compiling module Master_tb
+# 
+# Top level modules:
+# 	Master_tb
+# End time: 18:16:43 on Aug 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:16:47 on Aug 10,2025, Elapsed time: 0:01:40
+# Errors: 1, Warnings: 3
+# vsim -voptargs="+acc" Master_tb 
+# Start time: 18:16:47 on Aug 10,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Master_tb(fast)
+# Loading work.Master_tx(fast)
+# Loading work.internal_counter(fast)
+# Loading work.Bus(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Fares Sultan  Hostname: DESKTOP-QKFN6QS  ProcessID: 15524
+#           Attempting to use alternate WLF file "./wlftxx3n2b".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftxx3n2b
+# ** Error: send1 error bus = 0, bus_out =0
+#    Time: 24 ns  Scope: Master_tb File: master_tb.v Line: 59
+# ** Note: $stop    : master_tb.v(60)
+#    Time: 24 ns  Iteration: 1  Instance: /Master_tb
+# Break in Module Master_tb at master_tb.v line 60
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 18:19:50 on Aug 10,2025
+# vlog -reportprogress 300 -f src_files.list 
+# -- Compiling module Bus
+# -- Compiling module Master_tx
+# -- Compiling module internal_counter
+# -- Compiling module Master_tb
+# 
+# Top level modules:
+# 	Master_tb
+# End time: 18:19:50 on Aug 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:19:52 on Aug 10,2025, Elapsed time: 0:03:05
+# Errors: 1, Warnings: 2
+# vsim -voptargs="+acc" Master_tb 
+# Start time: 18:19:52 on Aug 10,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Master_tb(fast)
+# Loading work.Master_tx(fast)
+# Loading work.internal_counter(fast)
+# Loading work.Bus(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Fares Sultan  Hostname: DESKTOP-QKFN6QS  ProcessID: 15524
+#           Attempting to use alternate WLF file "./wlft4cye3h".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft4cye3h
+# ** Error: send1 error bus = 1, bus_out =z
+#    Time: 24 ns  Scope: Master_tb File: master_tb.v Line: 59
+# ** Note: $stop    : master_tb.v(60)
+#    Time: 24 ns  Iteration: 1  Instance: /Master_tb
+# Break in Module Master_tb at master_tb.v line 60
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 18:24:56 on Aug 10,2025
+# vlog -reportprogress 300 -f src_files.list 
+# -- Compiling module Bus
+# -- Compiling module Master_tx
+# -- Compiling module internal_counter
+# -- Compiling module Master_tb
+# 
+# Top level modules:
+# 	Master_tb
+# End time: 18:24:56 on Aug 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:24:59 on Aug 10,2025, Elapsed time: 0:05:07
+# Errors: 1, Warnings: 2
+# vsim -voptargs="+acc" Master_tb 
+# Start time: 18:24:59 on Aug 10,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Master_tb(fast)
+# Loading work.Master_tx(fast)
+# Loading work.internal_counter(fast)
+# Loading work.Bus(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Fares Sultan  Hostname: DESKTOP-QKFN6QS  ProcessID: 15524
+#           Attempting to use alternate WLF file "./wlftjjkwz0".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftjjkwz0
+# ** Error: send1-0 error bus = 1, bus_out =z
+#    Time: 24 ns  Scope: Master_tb File: master_tb.v Line: 59
+# ** Note: $stop    : master_tb.v(60)
+#    Time: 24 ns  Iteration: 1  Instance: /Master_tb
+# Break in Module Master_tb at master_tb.v line 60
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 18:27:11 on Aug 10,2025
+# vlog -reportprogress 300 -f src_files.list 
+# -- Compiling module Bus
+# -- Compiling module Master_tx
+# -- Compiling module internal_counter
+# -- Compiling module Master_tb
+# 
+# Top level modules:
+# 	Master_tb
+# End time: 18:27:11 on Aug 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:27:15 on Aug 10,2025, Elapsed time: 0:02:16
+# Errors: 1, Warnings: 2
+# vsim -voptargs="+acc" Master_tb 
+# Start time: 18:27:15 on Aug 10,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Master_tb(fast)
+# Loading work.Master_tx(fast)
+# Loading work.internal_counter(fast)
+# Loading work.Bus(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Fares Sultan  Hostname: DESKTOP-QKFN6QS  ProcessID: 15524
+#           Attempting to use alternate WLF file "./wlfth9nxyi".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfth9nxyi
+# ** Error: send1-0 error bus = 1, bus_out =z
+#    Time: 24 ns  Scope: Master_tb File: master_tb.v Line: 62
+# ** Note: $stop    : master_tb.v(63)
+#    Time: 24 ns  Iteration: 1  Instance: /Master_tb
+# Break in Module Master_tb at master_tb.v line 63
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 18:30:39 on Aug 10,2025
+# vlog -reportprogress 300 -f src_files.list 
+# -- Compiling module Bus
+# -- Compiling module Master_tx
+# -- Compiling module internal_counter
+# -- Compiling module Master_tb
+# 
+# Top level modules:
+# 	Master_tb
+# End time: 18:30:39 on Aug 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:30:43 on Aug 10,2025, Elapsed time: 0:03:28
+# Errors: 1, Warnings: 2
+# vsim -voptargs="+acc" Master_tb 
+# Start time: 18:30:43 on Aug 10,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Master_tb(fast)
+# Loading work.Master_tx(fast)
+# Loading work.internal_counter(fast)
+# Loading work.Bus(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Fares Sultan  Hostname: DESKTOP-QKFN6QS  ProcessID: 15524
+#           Attempting to use alternate WLF file "./wlftswsvgi".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftswsvgi
+# ** Error: send1-0 error bus = 1, bus_out =z
+#    Time: 24 ns  Scope: Master_tb File: master_tb.v Line: 62
+# ** Note: $stop    : master_tb.v(63)
+#    Time: 24 ns  Iteration: 1  Instance: /Master_tb
+# Break in Module Master_tb at master_tb.v line 63
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 18:32:12 on Aug 10,2025
+# vlog -reportprogress 300 -f src_files.list 
+# -- Compiling module Bus
+# -- Compiling module Master_tx
+# -- Compiling module internal_counter
+# -- Compiling module Master_tb
+# 
+# Top level modules:
+# 	Master_tb
+# End time: 18:32:12 on Aug 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:32:16 on Aug 10,2025, Elapsed time: 0:01:33
+# Errors: 1, Warnings: 2
+# vsim -voptargs="+acc" Master_tb 
+# Start time: 18:32:16 on Aug 10,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Master_tb(fast)
+# Loading work.Master_tx(fast)
+# Loading work.internal_counter(fast)
+# Loading work.Bus(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Fares Sultan  Hostname: DESKTOP-QKFN6QS  ProcessID: 15524
+#           Attempting to use alternate WLF file "./wlftnz86e0".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftnz86e0
+# ** Error: send1-0 error bus = 1, bus_out =z
+#    Time: 24 ns  Scope: Master_tb File: master_tb.v Line: 62
+# ** Note: $stop    : master_tb.v(63)
+#    Time: 24 ns  Iteration: 1  Instance: /Master_tb
+# Break in Module Master_tb at master_tb.v line 63
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 18:32:54 on Aug 10,2025
+# vlog -reportprogress 300 -f src_files.list 
+# -- Compiling module Bus
+# -- Compiling module Master_tx
+# -- Compiling module internal_counter
+# -- Compiling module Master_tb
+# 
+# Top level modules:
+# 	Master_tb
+# End time: 18:32:55 on Aug 10,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 18:32:58 on Aug 10,2025, Elapsed time: 0:00:42
+# Errors: 1, Warnings: 2
+# vsim -voptargs="+acc" Master_tb 
+# Start time: 18:32:58 on Aug 10,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Master_tb(fast)
+# Loading work.Master_tx(fast)
+# Loading work.internal_counter(fast)
+# Loading work.Bus(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Fares Sultan  Hostname: DESKTOP-QKFN6QS  ProcessID: 15524
+#           Attempting to use alternate WLF file "./wlft6ifkbi".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft6ifkbi
+# ** Error: send1-0 error bus = 1, bus_out =z
+#    Time: 24 ns  Scope: Master_tb File: master_tb.v Line: 62
+# ** Note: $stop    : master_tb.v(63)
+#    Time: 24 ns  Iteration: 1  Instance: /Master_tb
+# Break in Module Master_tb at master_tb.v line 63
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 18:33:40 on Aug 10,2025
+# vlog -reportprogress 300 -f src_files.list 
+# -- Compiling module Bus
+# -- Compiling module Master_tx
+# -- Compiling module internal_counter
+# -- Compiling module Master_tb
+# 
+# Top level modules:
+# 	Master_tb
+# End time: 18:33:40 on Aug 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:33:43 on Aug 10,2025, Elapsed time: 0:00:45
+# Errors: 1, Warnings: 2
+# vsim -voptargs="+acc" Master_tb 
+# Start time: 18:33:43 on Aug 10,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Master_tb(fast)
+# Loading work.Master_tx(fast)
+# Loading work.internal_counter(fast)
+# Loading work.Bus(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Fares Sultan  Hostname: DESKTOP-QKFN6QS  ProcessID: 15524
+#           Attempting to use alternate WLF file "./wlftjfd672".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftjfd672
+# ** Error: send1-0 error bus = 0, bus_out =0
+#    Time: 28 ns  Scope: Master_tb File: master_tb.v Line: 62
+# ** Note: $stop    : master_tb.v(63)
+#    Time: 28 ns  Iteration: 1  Instance: /Master_tb
+# Break in Module Master_tb at master_tb.v line 63
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 18:35:14 on Aug 10,2025
+# vlog -reportprogress 300 -f src_files.list 
+# -- Compiling module Bus
+# -- Compiling module Master_tx
+# -- Compiling module internal_counter
+# -- Compiling module Master_tb
+# 
+# Top level modules:
+# 	Master_tb
+# End time: 18:35:14 on Aug 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:35:16 on Aug 10,2025, Elapsed time: 0:01:33
+# Errors: 1, Warnings: 2
+# vsim -voptargs="+acc" Master_tb 
+# Start time: 18:35:16 on Aug 10,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "Master_tx(fast)".
+# Loading work.Master_tb(fast)
+# Loading work.Master_tx(fast)
+# Loading work.internal_counter(fast)
+# Loading work.Bus(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Fares Sultan  Hostname: DESKTOP-QKFN6QS  ProcessID: 15524
+#           Attempting to use alternate WLF file "./wlftk7tntg".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftk7tntg
+run
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 22:26:38 on Aug 10,2025
+# vlog -reportprogress 300 -f src_files.list 
+# -- Compiling module Bus
+# -- Compiling module Master_tx
+# -- Compiling module internal_counter
+# -- Compiling module Master_tb
+# ** Error: (vlog-13069) master_tb.v(78): near "begin": syntax error, unexpected begin, expecting '('.
+# ** Error: (vlog-13069) master_tb.v(83): near "repeat": syntax error, unexpected repeat.
+# ** Error: (vlog-13069) master_tb.v(86): near "=": syntax error, unexpected '='.
+# ** Error: master_tb.v(86): (vlog-13205) Syntax error found in the scope following 'correct_count'. Is there a missing '::'?
+# End time: 22:26:38 on Aug 10,2025, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# ** Error: C:/questasim64_2021.1/win64/vlog failed.
+# Error in macro ./run.do line 2
+# C:/questasim64_2021.1/win64/vlog failed.
+#     while executing
+# "vlog -f src_files.list "
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 22:26:50 on Aug 10,2025
+# vlog -reportprogress 300 -f src_files.list 
+# -- Compiling module Bus
+# -- Compiling module Master_tx
+# -- Compiling module internal_counter
+# -- Compiling module Master_tb
+# 
+# Top level modules:
+# 	Master_tb
+# End time: 22:26:50 on Aug 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 22:26:56 on Aug 10,2025, Elapsed time: 3:51:40
+# Errors: 1, Warnings: 2
+# vsim -voptargs="+acc" Master_tb 
+# Start time: 22:26:56 on Aug 10,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Master_tb(fast)
+# Loading work.Master_tx(fast)
+# Loading work.internal_counter(fast)
+# Loading work.Bus(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Fares Sultan  Hostname: DESKTOP-QKFN6QS  ProcessID: 15524
+#           Attempting to use alternate WLF file "./wlftb1k31s".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftb1k31s
+run
+# ** Warning: (vsim-PLI-8496) $fatal : Argument number 1 is invalid. Expecting 0, 1, or 2. Using default value of 1
+#    Time: 154 ns  Iteration: 1  Process: /Master_tb/#INITIAL#17 File: master_tb.v Line: 76
+# ** Fatal: send0-1 error
+#    Time: 154 ns  Scope: Master_tb File: master_tb.v Line: 76
+# ** Note: $finish    : master_tb.v(76)
+#    Time: 154 ns  Iteration: 1  Instance: /Master_tb
+# 1
+# Break in Module Master_tb at master_tb.v line 76
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 22:29:49 on Aug 10,2025
+# vlog -reportprogress 300 -f src_files.list 
+# -- Compiling module Bus
+# -- Compiling module Master_tx
+# -- Compiling module internal_counter
+# -- Compiling module Master_tb
+# 
+# Top level modules:
+# 	Master_tb
+# End time: 22:29:49 on Aug 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 22:29:54 on Aug 10,2025, Elapsed time: 0:02:58
+# Errors: 1, Warnings: 3
+# vsim -voptargs="+acc" Master_tb 
+# Start time: 22:29:54 on Aug 10,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Master_tb(fast)
+# Loading work.Master_tx(fast)
+# Loading work.internal_counter(fast)
+# Loading work.Bus(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Fares Sultan  Hostname: DESKTOP-QKFN6QS  ProcessID: 15524
+#           Attempting to use alternate WLF file "./wlfta26d3t".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfta26d3t
+run
+run
+# Correct count = 141
+# ** Note: $stop    : master_tb.v(98)
+#    Time: 296 ns  Iteration: 1  Instance: /Master_tb
+# Break in Module Master_tb at master_tb.v line 98
