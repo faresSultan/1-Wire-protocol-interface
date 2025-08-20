@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="onewire_controller" Register="72" Lut="56" T_Register="108(72)" T_Alu="3(0)" T_Lut="159(56)">
+ <SubModule name="bit_fsm" Register="36" Alu="3" Lut="103" T_Register="36(36)" T_Alu="3(3)" T_Lut="103(103)"/>
+</Module>

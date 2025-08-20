@@ -1,0 +1,20 @@
+[
+ {
+  "InstFile" : "D:/Digital IC design/1-wire/1-Wire-protocol-interface/syn/src/Master_controller.v",
+  "InstLine" : 1,
+  "InstName" : "onewire_controller",
+  "ModuleFile" : "D:/Digital IC design/1-wire/1-Wire-protocol-interface/syn/src/Master_controller.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "onewire_controller",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/Digital IC design/1-wire/1-Wire-protocol-interface/syn/src/Master_controller.v",
+    "InstLine" : 20,
+    "InstName" : "bit_fsm",
+    "ModuleFile" : "D:/Digital IC design/1-wire/1-Wire-protocol-interface/syn/src/Master_tx.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "onewire_master_Tx_Rx"
+   }
+  ]
+ }
+]

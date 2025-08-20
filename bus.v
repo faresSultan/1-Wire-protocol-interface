@@ -1,5 +1,5 @@
 module Bus(bus);
-    input wand bus;
+    inout wand bus;
 
     assign bus = 'b1;
     

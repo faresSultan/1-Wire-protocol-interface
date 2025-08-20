@@ -1,0 +1,21 @@
+{
+ "Device" : "GW1NR-9C",
+ "Files" : [
+  {
+   "Path" : "D:/Digital IC design/1-wire/1-Wire-protocol-interface/syn/src/Master_tx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Digital IC design/1-wire/1-Wire-protocol-interface/syn/src/Master_controller.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "D:/Digital IC design/1-wire/1-Wire-protocol-interface/syn/impl/temp/rtl_parser.result",
+ "Top" : "",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}
